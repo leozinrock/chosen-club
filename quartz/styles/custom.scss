@@ -1,3 +1,556 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// ===== CHOSEN CLUB — PREMIUM THEME =====
+
+$gold: #C9A84C;
+$gold-light: #F0D070;
+$gold-mid: #E8C97A;
+$gold-dim: rgba(201, 168, 76, 0.12);
+$gold-border: rgba(201, 168, 76, 0.35);
+$gold-glow: rgba(201, 168, 76, 0.22);
+$radius-pill: 50px;
+$radius-card: 16px;
+$radius-menu: 12px;
+$radius-item: 8px;
+
+$gradient-gold:   linear-gradient(135deg, #C9A84C 0%, #F0D070 50%, #D4AF37 100%);
+$gradient-gold-h: linear-gradient(90deg,  #C9A84C 0%, #F0D070 60%, #E8C97A 100%);
+
+// ===== ANIMAÇÕES =====
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// ===== HEADINGS — DEGRADÊ DOURADO APENAS NOS TÍTULOS =====
+// h1 e h2 (grandes): degradê. h3-h6 (menores): ouro sólido.
+h1, h2 {
+  background: $gradient-gold-h;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.015em;
+
+  // links âncora dentro de headings não herdam o clip
+  a[role="anchor"], a[href^="#"] {
+    background: none !important;
+    -webkit-text-fill-color: rgba(201, 168, 76, 0.45) !important;
+  }
+}
+
+h3, h4, h5, h6 {
+  color: $gold;
+  letter-spacing: -0.01em;
+}
+
+// Título principal da página (acima do artigo)
+.article-title {
+  background: $gradient-gold !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: 2rem !important;
+}
+
+// Logo "Chosen Club" na sidebar
+.page-title a {
+  background: $gradient-gold-h;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  transition: opacity 0.2s ease;
+
+  &:hover { opacity: 0.8; }
+}
+
+// ===== BODY TEXT — não herda dourado =====
+// Links internos de artigo: fundo sutil, texto normal
+.center a.internal {
+  background-color: $gold-dim;
+  border-radius: 4px;
+  color: inherit;
+  -webkit-text-fill-color: unset;
+
+  &:hover {
+    background-color: rgba(201, 168, 76, 0.2);
+    color: $gold;
+  }
+
+  &.tag-link {
+    color: $gold;
+    -webkit-text-fill-color: $gold;
+  }
+}
+
+// ===== BARRA DE PROGRESSO =====
+.navigation-progress {
+  background: linear-gradient(90deg, $gold, $gold-light);
+  height: 2px;
+}
+
+// ===== BLOCKQUOTE =====
+blockquote {
+  border-left-color: $gold;
+  background: $gold-dim;
+  border-radius: 0 $radius-item $radius-item 0;
+  padding: 0.8rem 1rem;
+}
+
+// ===== TOOLBAR (Search + Darkmode + ReaderMode) — alinhamento =====
+.sidebar.left > .flex-component {
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+// ===== SEARCH BUTTON =====
+.search {
+  flex: 1;
+
+  button {
+    width: 100%;
+    border-radius: $radius-pill !important;
+    border: 1px solid $gold-border !important;
+    background: var(--lightgray) !important;
+    color: var(--darkgray) !important;
+    -webkit-text-fill-color: var(--darkgray) !important;
+    font-weight: 500 !important;
+    padding: 0.4rem 0.9rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+
+    &:hover {
+      border-color: $gold !important;
+      box-shadow: 0 0 0 3px $gold-glow, 0 3px 10px rgba(0,0,0,0.18) !important;
+    }
+
+    svg {
+      stroke: $gold !important;
+      flex-shrink: 0 !important;
+    }
+  }
+}
+
+// Search modal
+.search-container {
+  .search-bar {
+    border-radius: $radius-pill !important;
+    border: 1px solid $gold-border !important;
+    background: var(--lightgray) !important;
+    color: var(--darkgray) !important;
+
+    &:focus {
+      border-color: $gold !important;
+      box-shadow: 0 0 0 3px $gold-glow !important;
+      outline: none !important;
+    }
+  }
+
+  .result-card {
+    border-radius: $radius-item !important;
+    transition: background 0.15s ease !important;
+
+    &:hover, &:focus { background: $gold-dim !important; }
+  }
+}
+
+// ===== DARKMODE & READER MODE — ícones circulares =====
+.darkmode,
+.reader-mode {
+  flex-shrink: 0;
+
+  button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    border: 1px solid $gold-border !important;
+    background: var(--lightgray) !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+    transition: background 0.2s ease, box-shadow 0.2s ease !important;
+
+    &:hover {
+      background: $gold-dim !important;
+      box-shadow: 0 0 0 3px $gold-glow !important;
+    }
+
+    svg {
+      width: 16px !important;
+      height: 16px !important;
+      stroke: $gold !important;
+      fill: none !important;
+      display: block !important;
+    }
+  }
+}
+
+// ===== EXPLORER — MENU DE APP =====
+.sidebar.left {
+  gap: 1rem;
+  padding-top: 5rem !important;
+}
+
+.explorer {
+  background: var(--lightgray);
+  border: 1px solid $gold-border;
+  border-radius: $radius-menu;
+  padding: 0;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+
+  // Rótulo de seção no topo
+  &::before {
+    content: "MENU";
+    display: block;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.63rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $gold;
+    border-bottom: 1px solid $gold-border;
+    background: rgba(201, 168, 76, 0.06);
+  }
+}
+
+.explorer-content {
+  padding: 0.3rem;
+}
+
+// Botão de colapso do explorer (mobile) — estilo pill
+button.explorer-toggle {
+  border-radius: $radius-pill;
+  border: 1px solid $gold-border;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  color: $gold;
+  background: $gold-dim;
+  transition: background 0.15s ease;
+
+  &:hover { background: rgba(201,168,76,0.2); }
+}
+
+// Itens do menu — estilo app
+li.explorer-node {
+  margin: 1px 0;
+
+  // Pasta (folder)
+  > .folder-outer > .folder-container > button.folder-button {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0.5rem 0.7rem !important;
+    border-radius: $radius-item !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: var(--darkgray) !important;
+    -webkit-text-fill-color: var(--darkgray) !important;
+    background: transparent !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+    gap: 0.4rem !important;
+
+    // Ícone chevron
+    svg {
+      flex-shrink: 0 !important;
+      opacity: 0.5 !important;
+      stroke: currentColor !important;
+      transition: transform 0.2s ease, opacity 0.2s ease !important;
+    }
+
+    &:hover {
+      background: $gold-dim !important;
+      color: $gold !important;
+      -webkit-text-fill-color: $gold !important;
+
+      svg { opacity: 1 !important; stroke: $gold !important; }
+    }
+
+    // Pasta aberta: gira o chevron
+    &[aria-expanded="true"] svg {
+      transform: rotate(90deg) !important;
+    }
+  }
+
+  // Arquivo (link)
+  > a {
+    display: flex;
+    align-items: center;
+    padding: 0.42rem 0.7rem 0.42rem 1.6rem;
+    border-radius: $radius-item;
+    font-size: 0.85rem;
+    color: var(--darkgray);
+    -webkit-text-fill-color: var(--darkgray);
+    transition: background 0.15s ease, color 0.15s ease;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+
+    &:hover {
+      background: $gold-dim;
+      color: $gold;
+      -webkit-text-fill-color: $gold;
+    }
+
+    &[aria-current="page"], &.active {
+      background: $gold-dim;
+      border-left-color: $gold;
+      color: $gold;
+      -webkit-text-fill-color: $gold;
+      font-weight: 600;
+    }
+  }
+
+  // Sub-pastas — indent visual
+  ul.content li.explorer-node > a {
+    padding-left: 2.4rem;
+  }
+}
+
+// ===== ÍCONES POR SEÇÃO (nth-child nas pastas do nível raiz) =====
+$folder-icons: (1: "🌐", 2: "👥", 3: "🛠", 4: "🚀", 5: "📅", 6: "📋");
+
+@each $n, $icon in $folder-icons {
+  .explorer-content > ul > li.explorer-node:nth-child(#{$n})
+  > .folder-outer > .folder-container > button.folder-button > span::before {
+    content: "#{$icon} ";
+  }
+}
+
+// ===== TAGS =====
+a.internal.tag-link,
+.tags li a,
+.tag-link {
+  border-radius: $radius-pill !important;
+  padding: 0.18rem 0.7rem !important;
+  background: $gold-dim !important;
+  color: $gold !important;
+  -webkit-text-fill-color: $gold !important;
+  border: 1px solid $gold-border !important;
+  font-size: 0.8rem;
+  transition: background 0.15s ease !important;
+
+  &:hover {
+    background: $gold !important;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+  }
+}
+
+// ===== BOTÃO GENÉRICO (degradê dourado, texto escuro) =====
+button:not([class*="folder"]):not([class*="explorer"]):not([class*="darkmode"]):not([class*="reader"]) {
+  border-radius: $radius-pill;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid rgba(201, 168, 76, 0.5);
+  background: $gradient-gold;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 3px 12px rgba(201, 168, 76, 0.3);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(201, 168, 76, 0.45);
+    transform: translateY(-1px);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(201, 168, 76, 0.25);
+  }
+}
+
+// ===== FOLDER PAGE — CARDS =====
+.page-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+
+  li {
+    margin: 0;
+
+    > a {
+      display: flex;
+      flex-direction: column;
+      background: var(--lightgray);
+      border: 1px solid $gold-border;
+      border-radius: $radius-card;
+      padding: 1.4rem 1.2rem;
+      min-height: 100px;
+      box-sizing: border-box;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+      text-decoration: none;
+      animation: fadeInUp 0.35s ease forwards;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.2), 0 0 0 1px $gold, 0 0 18px $gold-glow;
+        border-color: $gold;
+      }
+
+      // Título do card — degradê
+      > p:first-child, .page-listing-title {
+        font-weight: 600;
+        background: $gradient-gold-h;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 1rem;
+        margin: 0 0 0.4rem 0;
+        line-height: 1.3;
+      }
+
+      // Descrição do card — texto normal
+      > p:last-child, .page-listing-desc {
+        color: var(--gray);
+        -webkit-text-fill-color: var(--gray);
+        font-size: 0.83rem;
+        line-height: 1.4;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// ===== FOTOS DE MEMBROS =====
+article img {
+  border-radius: $radius-card;
+  border: 2px solid $gold-border;
+  transition: box-shadow 0.2s ease;
+  display: block;
+  margin: 1rem auto;
+
+  &:hover { box-shadow: 0 6px 20px rgba(201, 168, 76, 0.25); }
+}
+
+// ===== GRAPH =====
+.graph-outer {
+  border-radius: $radius-card !important;
+  overflow: hidden;
+  border: 1px solid $gold-border !important;
+}
+
+// ===== BACKLINKS & TOC =====
+.backlinks, .toc {
+  border-radius: $radius-menu;
+  border: 1px solid $gold-border;
+  padding: 1rem 1.2rem;
+  background: var(--lightgray);
+
+  > ul > li > a {
+    border-radius: $radius-item;
+    padding: 0.2rem 0.4rem;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: $gold-dim;
+      color: $gold !important;
+      -webkit-text-fill-color: $gold !important;
+    }
+  }
+}
+
+// ===== TABELA =====
+.table-container > table {
+  border-radius: $radius-menu;
+  overflow: hidden;
+  border: 1px solid $gold-border;
+
+  th {
+    background: $gold-dim;
+    color: $gold;
+    -webkit-text-fill-color: $gold;
+    border-bottom-color: $gold-border;
+  }
+
+  tr:hover td { background: $gold-dim; }
+}
+
+// ===== ARTIGO FADE IN =====
+article { animation: fadeInUp 0.35s ease forwards; }
+
+// ===== BREADCRUMBS =====
+.breadcrumb-container a {
+  border-radius: $radius-pill;
+  padding: 0.1rem 0.5rem;
+  background: $gold-dim;
+  color: $gold !important;
+  -webkit-text-fill-color: $gold !important;
+  font-size: 0.83rem;
+  transition: background 0.15s ease;
+
+  &:hover {
+    background: $gold;
+    color: #111 !important;
+    -webkit-text-fill-color: #111 !important;
+  }
+}
+
+// ===== FOOTER =====
+footer {
+  border-top: 1px solid $gold-border;
+  padding-top: 1rem;
+  margin-top: 2rem;
+
+  p { font-size: 0.82rem; color: var(--gray); }
+
+  a {
+    color: $gold !important;
+    -webkit-text-fill-color: $gold !important;
+    border-radius: $radius-pill;
+    padding: 0.1rem 0.4rem;
+    font-weight: 600;
+
+    &:hover { background: $gold-dim; }
+  }
+}
+
+// ===== SCROLLBAR =====
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--lightgray); border-radius: $radius-pill; }
+::-webkit-scrollbar-thumb {
+  background: $gold-border;
+  border-radius: $radius-pill;
+  &:hover { background: $gold; }
+}
+
+// ===== SELEÇÃO DE TEXTO =====
+::selection {
+  background: rgba(201, 168, 76, 0.28);
+  color: var(--darkgray);
+}
+
+// ===== CODE BLOCKS =====
+pre {
+  border-color: $gold-border !important;
+  border-radius: $radius-item !important;
+}
+
+// ===== CALLOUTS =====
+.callout {
+  border-radius: $radius-card;
+  border-left: 3px solid $gold;
+}
+
+// ===== HR =====
+hr {
+  background: linear-gradient(90deg, transparent, $gold-border, transparent);
+  height: 1px;
+}
