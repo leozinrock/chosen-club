@@ -3,57 +3,10 @@ title: Chosen Club
 tags: [hub, networking]
 ---
 
-<div id="splash-overlay">
-  <div class="splash-orb orb-1"></div>
-  <div class="splash-orb orb-2"></div>
-  <div class="splash-orb orb-3"></div>
-  <div class="splash-line"></div>
-  <div class="splash-content">
-    <div class="splash-badge">✦ Networking Premium</div>
-    <p class="splash-title-text">Chosen Club</p>
-    <p class="splash-tagline">Conectando profissionais que criam,<br>constroem e transformam.</p>
-    <button class="splash-enter-btn" id="splash-enter-btn">Entrar na rede →</button>
-    <div class="splash-timer-track">
-      <div class="splash-timer-fill" id="splash-timer-fill"></div>
-    </div>
-    <p class="splash-hint">Acesso automático em 4 segundos</p>
-  </div>
-</div>
-
 <script>
-(function () {
-  var overlay = document.getElementById('splash-overlay');
-  var btn = document.getElementById('splash-enter-btn');
-  var fill = document.getElementById('splash-timer-fill');
-  var DURATION = 4000;
-
-  if (!overlay) return;
-
-  // Não mostra de novo na mesma sessão
-  if (sessionStorage.getItem('cc-splash-shown')) {
-    overlay.style.display = 'none';
-    return;
-  }
-
-  // Anima a barra de progresso
-  if (fill) {
-    fill.style.transition = 'width ' + DURATION + 'ms linear';
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        fill.style.width = '100%';
-      });
-    });
-  }
-
-  function dismiss() {
-    sessionStorage.setItem('cc-splash-shown', '1');
-    overlay.classList.add('splash-exit');
-    setTimeout(function () { overlay.style.display = 'none'; }, 700);
-  }
-
-  if (btn) btn.addEventListener('click', dismiss);
-  setTimeout(dismiss, DURATION);
-})();
+if (!sessionStorage.getItem('cc-splash-shown')) {
+  location.replace('welcome.html');
+}
 </script>
 
 <div class="hero-section">
@@ -104,4 +57,4 @@ tags: [hub, networking]
 
 ---
 
-> **Como usar:** Clique em qualquer membro para ver o perfil completo. Use a busca (⌘K) para encontrar por skill ou nome. Explore o grafo para ver as conexões da rede.
+> **Como usar:** Clique em qualquer membro para ver o perfil completo. Use a busca para encontrar por skill ou nome. Explore o grafo para ver as conexões da rede.
