@@ -1,13 +1,18 @@
 ---
-title: Chosen Club — Rede de Networking
+title: Chosen Club
 tags: [hub, networking]
 ---
 
-# 🌐 Chosen Club
-
-> Diretório da nossa rede de profissionais. Explore membros, habilidades e projetos para encontrar quem pode colaborar com você.
-
----
+<div class="hero-section">
+  <div class="hero-badge">✦ Rede de Networking Premium</div>
+  <h1 class="hero-title">Chosen Club</h1>
+  <p class="hero-subtitle">Conectando profissionais que criam, constroem e transformam. Encontre colaboradores, parceiros e mentores da rede.</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-number">3</span><span class="stat-label">Membros</span></div>
+    <div class="stat"><span class="stat-number">11</span><span class="stat-label">Habilidades</span></div>
+    <div class="stat"><span class="stat-number">1</span><span class="stat-label">Projeto ativo</span></div>
+  </div>
+</div>
 
 ## 👥 Membros
 
@@ -19,16 +24,16 @@ tags: [hub, networking]
 
 ---
 
-## 🛠 Habilidades disponíveis no grupo
+## 🛠 Habilidades no grupo
 
 ### Design & Criação
-- [[Figma]] · [[UX Research]] · [[Prototipagem]]
+[[Figma]] · [[UX Research]] · [[Prototipagem]]
 
 ### Tecnologia & Desenvolvimento
-- [[Python]] · [[Automação]] · [[APIs]] · [[IA]]
+[[Python]] · [[Automação]] · [[APIs]] · [[IA]]
 
 ### Marketing & Comunicação
-- [[Copywriting]] · [[SEO]] · [[Branding]] · [[Social Media]]
+[[Copywriting]] · [[SEO]] · [[Branding]] · [[Social Media]]
 
 ---
 
@@ -46,9 +51,4 @@ tags: [hub, networking]
 
 ---
 
-## Como usar este diretório
-
-- Clique em qualquer **membro** para ver seu perfil completo, habilidades e projetos
-- Clique em qualquer **habilidade** para ver quem a domina no grupo
-- Use a **busca** (ícone de lupa) para encontrar por nome ou skill
-- Explore o **grafo** para visualizar as conexões da rede
+> **Como usar:** Clique em qualquer membro para ver o perfil completo. Use a busca (⌘K) para encontrar por skill ou nome. Explore o grafo para ver as conexões da rede.
