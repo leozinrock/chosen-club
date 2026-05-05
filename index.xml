@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Chosen Club</title>
+      <link>https://leozinrock.github.io/chosen-club</link>
+      <description>Últimas 10 notas on Chosen Club</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Chosen Club</title>
+    <link>https://leozinrock.github.io/chosen-club/</link>
+    <guid>https://leozinrock.github.io/chosen-club/</guid>
+    <description><![CDATA[  if (!sessionStorage.getItem(&#039;cc-splash-shown&#039;)) { location.replace(&#039;welcome.html&#039;); } ✦ Rede de Networking Premium Chosen Club Conectando profissionais que criam, constroem e transformam. ]]></description>
+    <pubDate>Mon, 04 May 2026 23:56:00 GMT</pubDate>
+  </item><item>
+    <title>🌐 Hub do Grupo</title>
+    <link>https://leozinrock.github.io/chosen-club/00---Hub-Central/%F0%9F%8C%90-Hub-do-Grupo</link>
+    <guid>https://leozinrock.github.io/chosen-club/00---Hub-Central/%F0%9F%8C%90-Hub-do-Grupo</guid>
+    <description><![CDATA[ 🌐 Hub Central do Grupo de Networking Este é o ponto de entrada da nossa rede. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Ana Lima</title>
+    <link>https://leozinrock.github.io/chosen-club/01---Pessoas/Ana-Lima</link>
+    <guid>https://leozinrock.github.io/chosen-club/01---Pessoas/Ana-Lima</guid>
+    <description><![CDATA[ Ana Lima 🧠 Sobre Designer UX com 4 anos de experiência em produtos digitais. Apaixonada por acessibilidade e educação inclusiva. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Beatriz Rocha</title>
+    <link>https://leozinrock.github.io/chosen-club/01---Pessoas/Beatriz-Rocha</link>
+    <guid>https://leozinrock.github.io/chosen-club/01---Pessoas/Beatriz-Rocha</guid>
+    <description><![CDATA[ Beatriz Rocha 🧠 Sobre Especialista em branding e conteúdo estratégico para startups e marcas em fase de crescimento. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Carlos Mendes</title>
+    <link>https://leozinrock.github.io/chosen-club/01---Pessoas/Carlos-Mendes</link>
+    <guid>https://leozinrock.github.io/chosen-club/01---Pessoas/Carlos-Mendes</guid>
+    <description><![CDATA[ Carlos Mendes 🧠 Sobre Desenvolvedor com foco em automação de processos e integração de IA em workflows de pequenas empresas. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>APIs</title>
+    <link>https://leozinrock.github.io/chosen-club/02---Habilidades/APIs</link>
+    <guid>https://leozinrock.github.io/chosen-club/02---Habilidades/APIs</guid>
+    <description><![CDATA[ 🛠 APIs Integração entre sistemas via APIs REST, webhooks e SDKs. Conectar ferramentas e criar fluxos de dados entre plataformas. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Automação</title>
+    <link>https://leozinrock.github.io/chosen-club/02---Habilidades/Automa%C3%A7%C3%A3o</link>
+    <guid>https://leozinrock.github.io/chosen-club/02---Habilidades/Automa%C3%A7%C3%A3o</guid>
+    <description><![CDATA[ 🛠 Automação Criação de fluxos automáticos para eliminar trabalho manual repetitivo. Integração de ferramentas, scripts e webhooks. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Branding</title>
+    <link>https://leozinrock.github.io/chosen-club/02---Habilidades/Branding</link>
+    <guid>https://leozinrock.github.io/chosen-club/02---Habilidades/Branding</guid>
+    <description><![CDATA[ 🛠 Branding Construção e gestão de identidade de marca — posicionamento, personalidade, tom de voz e consistência visual. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Copywriting</title>
+    <link>https://leozinrock.github.io/chosen-club/02---Habilidades/Copywriting</link>
+    <guid>https://leozinrock.github.io/chosen-club/02---Habilidades/Copywriting</guid>
+    <description><![CDATA[ 🛠 Copywriting Escrita persuasiva orientada a conversão e resultado. Essencial para qualquer produto, marca ou campanha. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item><item>
+    <title>Figma</title>
+    <link>https://leozinrock.github.io/chosen-club/02---Habilidades/Figma</link>
+    <guid>https://leozinrock.github.io/chosen-club/02---Habilidades/Figma</guid>
+    <description><![CDATA[ 🛠 Figma Ferramenta líder de design de interfaces e prototipagem colaborativa. Essencial para times que constroem produtos digitais. ]]></description>
+    <pubDate>Fri, 24 Apr 2026 19:33:42 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
