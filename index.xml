@@ -9,8 +9,8 @@
     <title>Chosen Club</title>
     <link>https://leozinrock.github.io/chosen-club/</link>
     <guid>https://leozinrock.github.io/chosen-club/</guid>
-    <description><![CDATA[  if (!sessionStorage.getItem(&#039;cc-splash-shown&#039;)) { location.replace(&#039;welcome.html&#039;); } ✦ Rede de Networking Premium Chosen Club Conectando profissionais que criam, constroem e transformam. ]]></description>
-    <pubDate>Mon, 04 May 2026 23:56:00 GMT</pubDate>
+    <description><![CDATA[  if (!sessionStorage.getItem(&#039;cc-splash-shown&#039;)) { location.replace(&#039;static/welcome.html&#039;); } ✦ Rede de Networking Premium Chosen Club Conectando profissionais que criam, constroem e transformam. ]]></description>
+    <pubDate>Tue, 05 May 2026 00:32:27 GMT</pubDate>
   </item><item>
     <title>🌐 Hub do Grupo</title>
     <link>https://leozinrock.github.io/chosen-club/00---Hub-Central/%F0%9F%8C%90-Hub-do-Grupo</link>
