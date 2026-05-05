@@ -3,12 +3,6 @@ title: Chosen Club
 tags: [hub, networking]
 ---
 
-<script>
-if (!sessionStorage.getItem('cc-splash-shown')) {
-  location.replace('static/welcome.html');
-}
-</script>
-
 <div class="hero-section">
   <div class="hero-badge">✦ Rede de Networking Premium</div>
   <h1 class="hero-title">Chosen Club</h1>
