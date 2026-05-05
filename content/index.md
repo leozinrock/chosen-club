@@ -5,7 +5,7 @@ tags: [hub, networking]
 
 <script>
 if (!sessionStorage.getItem('cc-splash-shown')) {
-  location.replace('welcome.html');
+  location.replace('static/welcome.html');
 }
 </script>
 
