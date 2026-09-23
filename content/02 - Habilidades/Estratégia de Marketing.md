@@ -10,20 +10,11 @@ tags: [skill, marketing]
 Planejamento de conteúdo, posicionamento e crescimento de marcas no digital. Conecta criação, presença e resultado.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "Estratégia de Marketing")
-```
+[[Enne Rouse Pimentel Lamego]] · [[Arthur Beraldin Dal Santos]] · [[Kaio de Melo]]
 
 ## 🔗 Habilidades relacionadas
 [[Social Media]] · [[Tráfego Pago]] · [[Copywriting]] · [[Branding]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "Estratégia de Marketing")
-```
+*Nenhum projeto aberto ainda.*

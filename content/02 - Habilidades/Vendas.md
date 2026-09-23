@@ -10,20 +10,11 @@ tags: [skill, negócios]
 Técnicas de venda, inside sales e comunicação comercial para converter atenção em faturamento.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "Vendas")
-```
+[[Kaio de Melo]]
 
 ## 🔗 Habilidades relacionadas
 [[Copywriting]] · [[Estratégia de Marketing]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "Vendas")
-```
+*Nenhum projeto aberto ainda.*

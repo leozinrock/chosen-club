@@ -10,20 +10,11 @@ tags: [skill, marketing, marca]
 Construção e gestão de identidade de marca — posicionamento, personalidade, tom de voz e consistência visual.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "Branding")
-```
+[[Pedro Henrique Gomes de Azevedo]] · [[Kaio de Melo]]
 
 ## 🔗 Habilidades relacionadas
-[[Copywriting]] · [[SEO]] · [[Social Media]]
+[[Design Gráfico]] · [[Copywriting]] · [[Estratégia de Marketing]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "Branding")
-```
+*Nenhum projeto aberto ainda.*

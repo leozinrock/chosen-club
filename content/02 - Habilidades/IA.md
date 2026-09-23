@@ -10,20 +10,11 @@ tags: [skill, tecnologia, ia]
 Inteligência Artificial aplicada — uso de modelos de linguagem, automação com IA, prompt engineering e integração via API.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "IA")
-```
+[[Leonardo Cesar Ogliari]] · [[Maria Vitória Piaia Chuch]] · [[Arthur Beraldin Dal Santos]]
 
 ## 🔗 Habilidades relacionadas
-[[Python]] · [[APIs]] · [[Automação]]
+[[Automação]] · [[Análise de Dados]] · [[Desenvolvimento Web]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "IA")
-```
+*Nenhum projeto aberto ainda.*

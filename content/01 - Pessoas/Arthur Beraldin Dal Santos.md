@@ -43,9 +43,4 @@ Meta Ads, aquisição de leads, automação com IA.
 
 ## 📋 Encontros onde participou
 
-```dataview
-LIST
-FROM "04 - Encontros"
-WHERE contains(participantes, this.file.name)
-SORT data_encontro DESC
-```
+*Nenhum encontro registrado ainda.*

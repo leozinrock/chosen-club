@@ -42,9 +42,4 @@ Conteúdo estratégico, presença digital, marketing de marca.
 
 ## 📋 Encontros onde participou
 
-```dataview
-LIST
-FROM "04 - Encontros"
-WHERE contains(participantes, this.file.name)
-SORT data_encontro DESC
-```
+*Nenhum encontro registrado ainda.*

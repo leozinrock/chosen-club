@@ -10,20 +10,11 @@ tags: [skill, tecnologia, automacao]
 Criação de fluxos automáticos para eliminar trabalho manual repetitivo. Integração de ferramentas, scripts e webhooks.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "Automação")
-```
+[[Leonardo Cesar Ogliari]] · [[Arthur Beraldin Dal Santos]]
 
 ## 🔗 Habilidades relacionadas
-[[Python]] · [[APIs]] · [[IA]]
+[[IA]] · [[Desenvolvimento Web]] · [[Análise de Dados]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "Automação")
-```
+*Nenhum projeto aberto ainda.*

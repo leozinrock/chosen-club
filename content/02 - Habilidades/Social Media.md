@@ -10,20 +10,11 @@ tags: [skill, marketing, social]
 Gestão e estratégia de redes sociais — criação de conteúdo, calendário editorial, análise de métricas e crescimento de audiência.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "Social Media")
-```
+[[Maria Vitória Piaia Chuch]] · [[Enne Rouse Pimentel Lamego]] · [[Kaio de Melo]]
 
 ## 🔗 Habilidades relacionadas
-[[Copywriting]] · [[Branding]] · [[SEO]]
+[[Copywriting]] · [[Design Gráfico]] · [[Estratégia de Marketing]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "Social Media")
-```
+*Nenhum projeto aberto ainda.*

@@ -10,20 +10,11 @@ tags: [skill, design]
 Criação de peças visuais, identidade e materiais para redes e marca. Inclui ferramentas como Photoshop, Illustrator, Canva e edição de posts.
 
 ## 👥 Membros com esta habilidade
-
-```dataview
-LIST
-FROM "01 - Pessoas"
-WHERE contains(habilidades, "Design Gráfico")
-```
+[[Pedro Henrique Gomes de Azevedo]] · [[Maria Vitória Piaia Chuch]] · [[Enne Rouse Pimentel Lamego]] · [[Kaio de Melo]]
 
 ## 🔗 Habilidades relacionadas
 [[Branding]] · [[Social Media]] · [[Audiovisual]]
 
 ## 🚀 Projetos que precisam desta skill
 
-```dataview
-LIST
-FROM "03 - Projetos"
-WHERE contains(skills_necessarias, "Design Gráfico")
-```
+*Nenhum projeto aberto ainda.*
