@@ -567,7 +567,7 @@ button:not([class*="folder"]):not([class*="explorer"]):not([class*="darkmode"]):
   li {
     margin: 0;
 
-    > a {
+    > a:not(.tag-link) {
       display: flex;
       flex-direction: column;
       background: rgba(201, 168, 76, 0.04);
@@ -691,8 +691,15 @@ ul.section-ul {
     li { margin: 0; }
 
     a {
+      display: inline-flex !important;
+      flex-direction: row !important;
+      align-items: center;
+      min-height: 0 !important;
+      height: auto !important;
       font-size: 0.68rem !important;
       padding: 0.1rem 0.5rem !important;
+      border-radius: 999px !important;
+      box-shadow: none !important;
       white-space: nowrap;
     }
   }
