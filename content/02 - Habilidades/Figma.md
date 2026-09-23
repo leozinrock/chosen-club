@@ -18,7 +18,7 @@ WHERE contains(habilidades, "Figma")
 ```
 
 ## 🔗 Habilidades relacionadas
-[[UX Research]] · [[Prototipagem]]
+[[Design Gráfico]] · [[Social Media]]
 
 ## 🚀 Projetos que precisam desta skill
 
